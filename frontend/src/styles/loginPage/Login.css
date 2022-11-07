@@ -1,0 +1,128 @@
+.login-form-container {
+  width: 40%;
+  margin: 10rem auto;
+  background-color: #e6e6fa;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2px;
+  padding-top: 2rem;
+}
+
+/* fieldset styling*/
+.login-fieldset {
+  width: 90%;
+  margin: auto;
+  border: none;
+  border-radius: 0.5rem;
+  padding-bottom: 1.5rem;
+  /* form styling*/
+}
+.login-fieldset .login-legend {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 0.5rem;
+  color: black;
+  border-radius: 0.3rem;
+}
+.login-fieldset .login-form {
+  color: black;
+}
+.login-fieldset .login-form .email-input {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 0.4rem;
+  background: transparent;
+  color: black;
+}
+.login-fieldset .login-form .password {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 0.4rem;
+  background: transparent;
+  color: black;
+}
+.login-fieldset .keep-logged-in-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+}
+.login-fieldset .keep-logged-in-container .remember-user {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.4rem;
+}
+.login-fieldset .keep-logged-in-container .remember-user .remember-me-label {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin-left: 1rem;
+}
+.login-fieldset .keep-logged-in-container .forget-password {
+  font-size: 1.4rem;
+}
+.login-fieldset .paragraph {
+  font-size: 1.4rem;
+  line-height: 3rem;
+  margin-top: 1.6rem;
+  text-align: center;
+}
+.login-fieldset .paragraph .sign-up-btn {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.5s;
+  margin-left: 0.6rem;
+}
+.login-fieldset .paragraph .sign-up-btn:hover {
+  background-color: #aee6fa;
+  color: red;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.login-fieldset .login-button {
+  display: block;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  background: #f8f8ff;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.login-fieldset .login-button:hover {
+  display: block;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: #aee6fa;
+  color: red;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.password-display {
+  margin-left: -3rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.errorVisible {
+  display: block;
+  color: red;
+}
+
+.errorInvisible {
+  display: none;
+}/*# sourceMappingURL=Login.css.map */

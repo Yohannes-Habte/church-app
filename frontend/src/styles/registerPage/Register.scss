@@ -1,0 +1,380 @@
+@import "../variables/Variables.scss";
+
+.register-form-container {
+  width: 40%;
+  margin: 7rem auto;
+  padding: 2rem 0;
+  background-color: #e6e6fa;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2px;
+}
+
+.register-form-fieldset {
+  border: none;
+  font-size: 1.4rem;
+
+  /* legend styling*/
+
+  .register-legend {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 0.5rem;
+    border-radius: 0.3rem;
+  }
+
+  .registration-form {
+    width: 90%;
+    margin: auto;
+
+    /* Full name styling*/
+
+    .full-name-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "firstName lastName";
+      column-gap: 1rem;
+
+      .firstName-container {
+        grid-area: firstName;
+        margin-top: 2rem;
+
+        .firstName-input input {
+          width: 100%;
+          font-size: 1.2rem;
+          padding: 0.5rem;
+          border-radius: 0.3rem;
+        }
+
+        .firstName-label label {
+          font-size: 1.4rem;
+        }
+      }
+
+      .lastName-container {
+        grid-area: lastName;
+        margin-top: 2rem;
+
+        .lastName-input input {
+          width: 100%;
+          font-size: 1.2rem;
+          padding: 0.5rem;
+          border-radius: 0.3rem;
+        }
+
+        .lastName-label label {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    /* Date of birth and gender styling*/
+
+    .telephone-gender-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "birthDate gender";
+      column-gap: 1rem;
+      margin-top: 1rem;
+
+      .telephone-container {
+        grid-area: birthDate;
+
+        .telephone-label {
+          font-size: 1.4rem;
+        }
+
+        .telephone-input input {
+          width: 100%;
+          font-size: 1.2rem;
+          padding: 0.5rem;
+          border-radius: 0.3rem;
+        }
+      }
+
+      .gender-container {
+        grid-area: gender;
+
+        .gender-label label {
+          font-size: 1.4rem;
+        }
+
+        .gender-input select {
+          width: 100%;
+          font-size: 1.2rem;
+          padding: 0.5rem;
+          border-radius: 0.3rem;
+        }
+      }
+    }
+
+    /* Email address styling*/
+    .email-address-container {
+      margin-top: 1rem;
+      .email-label label {
+        font-size: 1.4rem;
+      }
+      .email-input input {
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+      }
+    }
+
+    /* Password and confirm password styling*/
+    .password-confirm-password-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "password confirmPassword";
+      column-gap: 1rem;
+      margin-top: 1rem;
+
+      .password-container {
+        grid-area: password;
+
+        .password-label label {
+          font-size: 1.4rem;
+        }
+
+        .password-input input {
+          width: 100%;
+          font-size: 1.2rem;
+          padding: 0.5rem;
+          border-radius: 0.3rem;
+        }
+      }
+
+      .confirm-password-container {
+        grid-area: confirmPassword;
+
+        .confirm-password-label label {
+          font-size: 1.4rem;
+        }
+
+        .confirm-password-input input {
+          width: 100%;
+          font-size: 1.2rem;
+          padding: 0.5rem;
+          border-radius: 0.3rem;
+        }
+      }
+    }
+
+    /* Residence address styling*/
+    .residence-address-container {
+      margin-top: 1rem;
+
+      .residence-address-inputs-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+          "street house"
+          "postalCode city"
+          "province country";
+        column-gap: 1rem;
+        row-gap: 1rem;
+
+        .street-input {
+          grid-area: street;
+
+          & input {
+            width: 100%;
+            font-size: 1.2rem;
+            padding: 0.5rem;
+            border-radius: 0.3rem;
+          }
+        }
+
+        .house-number {
+          grid-area: house;
+
+          & input {
+            width: 100%;
+            font-size: 1.2rem;
+            padding: 0.5rem;
+            border-radius: 0.3rem;
+          }
+        }
+
+        .zipCode {
+          grid-area: postalCode;
+
+          & input {
+            width: 100%;
+            font-size: 1.2rem;
+            padding: 0.5rem;
+            border-radius: 0.3rem;
+          }
+        }
+
+        .city {
+          grid-area: city;
+
+          & input {
+            width: 100%;
+            font-size: 1.2rem;
+            padding: 0.5rem;
+            border-radius: 0.3rem;
+          }
+        }
+
+        .province {
+          grid-area: province;
+
+          & input {
+            width: 100%;
+            font-size: 1.2rem;
+            padding: 0.5rem;
+            border-radius: 0.3rem;
+          }
+        }
+
+        .country {
+          grid-area: country;
+
+          & input {
+            width: 100%;
+            font-size: 1.2rem;
+            padding: 0.5rem;
+            border-radius: 0.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Agree checkbox and rest styling*/
+.checkbox-reset-container {
+  display: flex;
+  margin-top: 1rem;
+
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+
+    & input[type="checkbox"] {
+      width: 1.2rem;
+      height: 1.2rem;
+      border-radius: 0.3rem;
+      background-color: #f5f5f5;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+  }
+
+  .agree-statement {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+
+    & label {
+      font-size: 1.3rem;
+
+      & span {
+        color: blue;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .reset-container {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+
+    & input {
+      font-size: 1.4rem;
+      padding: 0.3rem 1rem;
+      border-radius: 0.3rem;
+      background-color: $buttonBackground;
+      border: 2px solid #ccc;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $hoverBackground;
+        color: $hoverTextColor;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+/* Registration buttons styling*/
+
+.registration-buttons-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+  display: flex;
+
+  .register-button {
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: $buttonBackground;
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+      background: $hoverBackground;
+      color: $hoverTextColor;
+      transition: 0.5s;
+    }
+  }
+
+  .swap-to-login {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-left: 1rem;
+
+    .login-button {
+      font-size: 1.6rem;
+      font-weight: 400;
+      border-radius: 0.3rem;
+      padding: 0.5rem;
+      color: blue;
+      text-decoration: none;
+      cursor: pointer;
+      margin-left: 0.5rem;
+
+      &:hover {
+        background: $hoverBackground;
+        color: $hoverTextColor;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+.registration-form input:focus {
+  outline: blue solid 1px;
+}
+
+.password-display {
+  margin-left: -2rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.registration-form label:after {
+  content: " *";
+  color: red;
+  font-size: 1rem;
+}
+
+.errorVisible {
+  display: block;
+  color: red;
+  font-size: 0.8rem;
+}
+
+.errorInvisible {
+  display: none;
+}

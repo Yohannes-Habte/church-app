@@ -1,0 +1,171 @@
+@import "../variables/Variables.scss";
+
+body {
+    background-color: $mainBackground;
+    
+}
+.report-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "title title"
+    "finance sacrament";
+  column-gap: 2rem;
+  width: 90%;
+  margin: 8rem auto;
+
+    .report-title {
+        grid-area: title;
+        text-align: center;
+        font-size:2rem;
+        padding: 1rem;
+    }
+
+    .finance-form-container {
+        grid-area: finance;
+        margin-top: 1rem;
+    }
+
+    .sacrament-form-container {
+        grid-area: sacrament;
+        margin-top: 1rem;
+    }
+}
+
+.finance-form-container,
+.sacrament-form-container {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  padding-left: 2rem;
+  padding-top: 1rem;
+  border-radius: 0.4rem;
+  padding-bottom: 2rem;
+  background-color: $mainBackground;
+
+  & button {
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: $buttonBackground;
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+      background: $hoverBackground;
+      color: $hoverTextColor;
+      transition: 0.5s;
+    }
+  }
+}
+
+.finance-form,
+.sacrament-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-bottom: 1rem;
+
+  & label {
+    display: block;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  & input {
+    display: block;
+    width: 90%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+.finance-sacrament-report-container {
+  width: 90%;
+  margin: 2rem auto;
+  padding: 1rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  border-radius: 0.4rem;
+}
+
+.financial-report-container {
+  margin-top: 0.1rem;
+
+  & h2 {
+    background-color:	#e6e6fa;
+    padding: 1rem;
+  }
+}
+
+.financial-title-report-container{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  column-gap: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  background-color: $mainBackground;
+  padding: 1rem; 
+}
+
+.financial-report {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  column-gap: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+
+  & p {
+    line-height: 2rem;
+    font-weight: 500;
+  }
+}
+
+.sacrament-report-container {
+  margin-top: 3rem;
+
+  & h2 {
+    background-color:	#e6e6fa;
+    padding: 1rem;
+  }
+}
+
+.sacrament-title-report-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  background-color: $mainBackground;
+  padding: 1rem; 
+}
+
+.surplus-container {
+  margin-left: 1rem;
+}
+
+.sacrament-report {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+
+  & p{
+    line-height: 2rem;
+    font-weight: 500;
+  }
+}
+
+.form-title {
+  font-size: 2rem;
+  color: green;
+  margin-bottom: 1rem;
+  text-align: center;
+}

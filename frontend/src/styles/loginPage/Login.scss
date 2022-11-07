@@ -1,0 +1,146 @@
+@import "../variables/Variables.scss";
+
+.login-form-container {
+  width: 40%;
+  margin: 10rem auto;
+  background-color: #e6e6fa;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2px;
+  padding-top: 2rem;
+}
+
+/* fieldset styling*/
+
+.login-fieldset {
+  width: 90%;
+  margin: auto;
+  border: none;
+  border-radius: 0.5rem;
+  padding-bottom: 1.5rem; 
+
+  .login-legend {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 0.5rem;
+    color: black;
+    border-radius: 0.3rem;
+  }
+
+  /* form styling*/
+
+  .login-form {
+    color: black;
+
+    .email-input {
+      width: 100%;
+      font-size: 1.6rem;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-radius: 0.4rem;
+      background: transparent;
+      color: black;
+    }
+
+    .password {
+      width: 100%;
+      font-size: 1.6rem;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-radius: 0.4rem;
+      background: transparent;
+      color: black;
+    }
+  }
+ 
+
+  .keep-logged-in-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+
+    .remember-user {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-size: 1.4rem;
+
+      .remember-me-label {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin-left: 1rem;
+      }
+    }
+
+    .forget-password {
+      font-size: 1.4rem;
+    }
+  }
+
+  .paragraph {
+    font-size: 1.4rem;
+    line-height: 3rem;
+    margin-top: 1.6rem;
+    text-align: center;
+
+    .sign-up-btn {
+      color: blue;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.5s;
+      margin-left: 0.6rem;
+
+      &:hover {
+        background-color: $hoverBackground;
+        color: $hoverTextColor;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+
+  .login-button {
+    display: block;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+    background: $modalBackground1;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    &:hover {
+      display: block;
+      width: 100%;
+      font-size: 2rem;
+      font-weight: bold;
+      border-radius: 0.7rem;
+      padding: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      background: $hoverBackground;
+      color: $hoverTextColor;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+  }
+}
+
+.password-display {
+  margin-left: -3rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.errorVisible {
+  display: block;
+  color: red;
+}
+
+.errorInvisible {
+  display: none;
+}

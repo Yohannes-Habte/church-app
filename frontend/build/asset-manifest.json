@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "./static/css/main.4c081367.css",
+    "main.js": "./static/js/main.982fdfe8.js",
+    "static/media/bitcoin.png": "./static/media/bitcoin.0f04e89d09a9bb0cef5e.png",
+    "static/media/WeightedMovingAverage.png": "./static/media/WeightedMovingAverage.2b4597c8a88e60cff829.png",
+    "static/media/macd-indicator.png": "./static/media/macd-indicator.9139c2153ad747be0641.png",
+    "static/media/ethereum.png": "./static/media/ethereum.3341533ccaab21ce5904.png",
+    "static/media/book.jpg": "./static/media/book.9d35540544852b4ae131.jpg",
+    "static/media/ExponentialMovingAverage.png": "./static/media/ExponentialMovingAverage.32df6485fa5731389d4d.png",
+    "static/media/arron-indicator.png": "./static/media/arron-indicator.74419a9965919dac18a0.png",
+    "static/media/ADX-indicator.png": "./static/media/ADX-indicator.88731756bfd9b548f453.png",
+    "static/media/RSI-indicator.png": "./static/media/RSI-indicator.5d15a4250ab0701a463a.png",
+    "static/media/investors.jpg": "./static/media/investors.8f8551d853b5df3c2ad9.jpg",
+    "static/media/realEstate.jpg": "./static/media/realEstate.ae78639c61887522b283.jpg",
+    "static/media/FOREX.jpg": "./static/media/FOREX.94b3211e62a8818d6d49.jpg",
+    "static/media/companyAnalysis.png": "./static/media/companyAnalysis.1d0b0dce03ed574d6f68.png",
+    "static/media/project.jpg": "./static/media/project.721e1e6904328046d0f9.jpg",
+    "static/media/macroEnvironmentalAnalysis1.png": "./static/media/macroEnvironmentalAnalysis1.87eca232c692e14c710a.png",
+    "static/media/journal.jpg": "./static/media/journal.a2a0d256ebe5b57e7847.jpg",
+    "static/media/logo.png": "./static/media/logo.d51a2d363944832c884a.png",
+    "static/media/stocks-vs-bonds.jpg": "./static/media/stocks-vs-bonds.d35d614614dbf81e0296.jpg",
+    "index.html": "./index.html",
+    "main.4c081367.css.map": "./static/css/main.4c081367.css.map",
+    "main.982fdfe8.js.map": "./static/js/main.982fdfe8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c081367.css",
+    "static/js/main.982fdfe8.js"
+  ]
+}
